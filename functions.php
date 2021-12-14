@@ -82,6 +82,25 @@ function positive_sum ($arr) {
     return $res;
   }
 
+function adjacentElementsProduct($array) {
+    $arraySum = [];
+    $count = count($array);
+    for ($i = 0; $i < $count - 1; ++$i) {
+        $arraySum[] = $array[$i] * $array[$i + 1];
+    }
+    return max($arraySum);
+    echo '<pre>';
+}
+
+function binaryArrayToNumber($arr) {
+    $res = 0;
+    $count = count($arr) - 1;
+    foreach ($arr as $n) {
+        $res += $n * (2 ** $count--);
+    }
+    return $res;
+}
+
 echo maxNumber($numbers) . '<br>';
 
 echo max($numbers) . '<br>';
