@@ -1,4 +1,6 @@
 <?php
 session_start();
-$user = $password = 'root';
-$pdo = new Pdo('mysql:dbname=fullstack2;host=127.0.0.1;port=3307', $user, $password);
+$user = 'root';
+$pswd = '';
+$pdo = new PDO('mysql:dbname=fullstack;host=127.0.0.1', $user, $pswd);
+$pdo->query("SET NAMES 'utf8'");

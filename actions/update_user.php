@@ -1,7 +1,6 @@
 <?php
 session_start();
-$user = $password = 'root';
-$pdo = new Pdo('mysql:dbname=fullstack2;host=127.0.0.1;port=3307', $user, $password);
+require $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
 $userId = $_POST['id'];
 $name = $_POST['name'];

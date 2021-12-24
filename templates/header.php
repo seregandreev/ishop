@@ -48,7 +48,7 @@ require $_SERVER['DOCUMENT_ROOT'] . '/config.php';
 
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <?= $_SESSION['user']['login'] ?>
+                            <?= isset($_SESSION['user']) ? $_SESSION['user']['login'] : "" ?>
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li><a class="dropdown-item" href="/pages/user.php?id=<?= $_SESSION['user']['id'] ?>">Личный кабинет</a></li>

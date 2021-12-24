@@ -1,6 +1,11 @@
 <?php
 $title = 'Регистрация';
 require_once '../templates/header.php';
+
+$query = "SELECT * FROM cities";
+$res = $pdo->query($query);
+$cities = $res->fetchAll();
+
 ?>
 <form method="POST" action="form.php">
     <input required class="form-control mb-2" placeholder="Имя" name='name'>
