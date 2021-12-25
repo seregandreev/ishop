@@ -1,6 +1,16 @@
 <?php
 $title = 'Авторизация';
 require_once '../templates/header.php';
+
+if (isset($_SESSION['loginError'])) {
+    echo 
+    "
+    <div class='alert alert-warning text-center' role='alert'>
+        Неверные данные
+    </div>
+    ";
+    unset($_SESSION['loginError']);
+}
 ?>
 
 <form method="POST" action="../actions/login.php">
