@@ -16,7 +16,7 @@ if (isset($_SESSION['registerError'])) {
     unset($_SESSION['registerError']);
 }
 ?>
-<form method="POST" action="../actions/register.php">
+<form method="POST" action="../actions/registered.php">
     <input required class="form-control mb-2" placeholder="Имя" name='name'>
     <input class="form-control mb-2" placeholder="Логин" name='login'>
     <input class="form-control mb-2" type="password" placeholder="Пароль" name='password'>

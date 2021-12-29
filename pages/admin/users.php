@@ -55,3 +55,5 @@ foreach ($users as $user) {
 
 echo "</tbody>
 </table>";
+
+require_once '../../templates/footer.php';

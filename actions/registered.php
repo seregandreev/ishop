@@ -10,7 +10,7 @@ $city_id = $_POST['city_id'];
 
 if ($password != $repassword) {
     $_SESSION['registerError'] = 'Пароли не совпадают!';
-    header('Location: ../register.php');
+    header('Location: ../pages/register.php');
     exit();
 }
 
@@ -33,4 +33,4 @@ if ($status) {
     $_SESSION['user'] = $user;
 }
 
-header('Location: ../index.php');
+header('Location: ../pages/register.php');
