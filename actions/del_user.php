@@ -8,4 +8,4 @@ $res->execute([
     ':id' => $userId,
 ]);
 
-header('Location: ../index.php');
+header('Location: ../pages/admin/users.php');

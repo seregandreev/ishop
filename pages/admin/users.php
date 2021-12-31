@@ -38,13 +38,13 @@ foreach ($users as $user) {
             <td>{$user['id']}</td>
             <td>{$user['login']}</td>
             <td>
-                <a href='pages/user.php?id={$user['id']}'>
+                <a href='../user.php?id={$user['id']}'>
                     {$user['name']}
                 </a>
             </td>
             <td>{$city}</td>
             <td class='text-center'>
-                <form method='post' action='actions/del_user.php'>
+                <form method='post' action='../../actions/del_user.php'>
                     <input type='hidden' name='id' value='{$user['id']}'>
                     <button type='submit' class='btn btn-danger'>x</button>
                 </form>
