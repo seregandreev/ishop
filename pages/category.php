@@ -24,7 +24,7 @@ foreach ($products as $product) {
     $countProductBasket = isset($_SESSION['products'][$product['id']]) ? $_SESSION['products'][$product['id']] : '';
     $cards .= 
     "
-    <div class='col-3 mb-2'>
+    <div class='col-3 mb-2 p-2'>
         <div class='card' style='width: 18rem;'>
             <div class='card-image text-center'>
                 <img src='/images/products/{$product['picture']}' class='card-img-top' alt='...'>

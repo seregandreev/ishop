@@ -11,7 +11,7 @@ foreach ($categories as $category) {
     $cards .= 
     "
     <div class='col-3 mb-2'>
-        <div class='card' style='width: 18rem;'>
+        <div class='card' style='height: 20rem'>
             <img src='/images/no_img.png' class='card-img-top' alt='...'>
             <div class='card-body'>
                 <h5 class='card-title'>{$category['name']}</h5>
